@@ -1,0 +1,504 @@
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 1, m: 5000, m_p: 5000, k: 10
+Requires 200.000000 MB of memory per task
+Time taken: 0.271 s.
+Time spent in communication: 0.000 s.
+Fraction of time spent in communication: 0.000
+Performance: 0.921 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 1, m: 5000, m_p: 5000, k: 100
+Requires 200.000000 MB of memory per task
+Time taken: 2.715 s.
+Time spent in communication: 0.001 s.
+Fraction of time spent in communication: 0.000
+Performance: 0.921 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 1, m: 5000, m_p: 5000, k: 1000
+Requires 200.000000 MB of memory per task
+Time taken: 27.163 s.
+Time spent in communication: 0.010 s.
+Fraction of time spent in communication: 0.000
+Performance: 0.920 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 1, m: 10000, m_p: 10000, k: 10
+Requires 800.000000 MB of memory per task
+Time taken: 1.140 s.
+Time spent in communication: 0.000 s.
+Fraction of time spent in communication: 0.000
+Performance: 0.877 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 1, m: 10000, m_p: 10000, k: 100
+Requires 800.000000 MB of memory per task
+Time taken: 11.419 s.
+Time spent in communication: 0.002 s.
+Fraction of time spent in communication: 0.000
+Performance: 0.876 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 1, m: 10000, m_p: 10000, k: 1000
+Requires 800.000000 MB of memory per task
+Time taken: 114.260 s.
+Time spent in communication: 0.014 s.
+Fraction of time spent in communication: 0.000
+Performance: 0.875 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 2, m: 5000, m_p: 2500, k: 10
+Requires 100.000000 MB of memory per task
+Time taken: 0.138 s.
+Time spent in communication: 0.000 s.
+Fraction of time spent in communication: 0.003
+Performance: 1.806 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 2, m: 5000, m_p: 2500, k: 100
+Requires 100.000000 MB of memory per task
+Time taken: 1.388 s.
+Time spent in communication: 0.003 s.
+Fraction of time spent in communication: 0.002
+Performance: 1.801 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 2, m: 5000, m_p: 2500, k: 1000
+Requires 100.000000 MB of memory per task
+Time taken: 13.863 s.
+Time spent in communication: 0.029 s.
+Fraction of time spent in communication: 0.002
+Performance: 1.803 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 2, m: 10000, m_p: 5000, k: 10
+Requires 400.000000 MB of memory per task
+Time taken: 0.582 s.
+Time spent in communication: 0.000 s.
+Fraction of time spent in communication: 0.001
+Performance: 1.718 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 2, m: 10000, m_p: 5000, k: 100
+Requires 400.000000 MB of memory per task
+Time taken: 5.828 s.
+Time spent in communication: 0.004 s.
+Fraction of time spent in communication: 0.001
+Performance: 1.716 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 2, m: 10000, m_p: 5000, k: 1000
+Requires 400.000000 MB of memory per task
+Time taken: 58.300 s.
+Time spent in communication: 0.036 s.
+Fraction of time spent in communication: 0.001
+Performance: 1.715 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 4, m: 5000, m_p: 1250, k: 10
+Requires 50.000000 MB of memory per task
+Time taken: 0.081 s.
+Time spent in communication: 0.000 s.
+Fraction of time spent in communication: 0.004
+Performance: 3.082 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 4, m: 5000, m_p: 1250, k: 100
+Requires 50.000000 MB of memory per task
+Time taken: 0.810 s.
+Time spent in communication: 0.003 s.
+Fraction of time spent in communication: 0.003
+Performance: 3.086 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 4, m: 5000, m_p: 1250, k: 1000
+Requires 50.000000 MB of memory per task
+Time taken: 8.084 s.
+Time spent in communication: 0.029 s.
+Fraction of time spent in communication: 0.004
+Performance: 3.093 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 4, m: 10000, m_p: 2500, k: 10
+Requires 200.000000 MB of memory per task
+Time taken: 0.326 s.
+Time spent in communication: 0.000 s.
+Fraction of time spent in communication: 0.001
+Performance: 3.066 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 4, m: 10000, m_p: 2500, k: 100
+Requires 200.000000 MB of memory per task
+Time taken: 3.266 s.
+Time spent in communication: 0.004 s.
+Fraction of time spent in communication: 0.001
+Performance: 3.061 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 4, m: 10000, m_p: 2500, k: 1000
+Requires 200.000000 MB of memory per task
+Time taken: 32.627 s.
+Time spent in communication: 0.038 s.
+Fraction of time spent in communication: 0.001
+Performance: 3.065 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 8, m: 5000, m_p: 625, k: 10
+Requires 25.000000 MB of memory per task
+Time taken: 0.076 s.
+Time spent in communication: 0.001 s.
+Fraction of time spent in communication: 0.007
+Performance: 3.272 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 8, m: 5000, m_p: 625, k: 100
+Requires 25.000000 MB of memory per task
+Time taken: 0.760 s.
+Time spent in communication: 0.007 s.
+Fraction of time spent in communication: 0.009
+Performance: 3.291 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 8, m: 5000, m_p: 625, k: 1000
+Requires 25.000000 MB of memory per task
+Time taken: 7.593 s.
+Time spent in communication: 0.036 s.
+Fraction of time spent in communication: 0.005
+Performance: 3.292 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 8, m: 10000, m_p: 1250, k: 10
+Requires 100.000000 MB of memory per task
+Time taken: 0.301 s.
+Time spent in communication: 0.001 s.
+Fraction of time spent in communication: 0.002
+Performance: 3.326 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 8, m: 10000, m_p: 1250, k: 100
+Requires 100.000000 MB of memory per task
+Time taken: 2.998 s.
+Time spent in communication: 0.006 s.
+Fraction of time spent in communication: 0.002
+Performance: 3.335 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 8, m: 10000, m_p: 1250, k: 1000
+Requires 100.000000 MB of memory per task
+Time taken: 29.958 s.
+Time spent in communication: 0.065 s.
+Fraction of time spent in communication: 0.002
+Performance: 3.338 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 16, m: 4992, m_p: 312, k: 10
+Requires 12.460032 MB of memory per task
+Time taken: 0.039 s.
+Time spent in communication: 0.001 s.
+Fraction of time spent in communication: 0.017
+Performance: 6.459 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 16, m: 4992, m_p: 312, k: 100
+Requires 12.460032 MB of memory per task
+Time taken: 0.381 s.
+Time spent in communication: 0.005 s.
+Fraction of time spent in communication: 0.012
+Performance: 6.542 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 16, m: 4992, m_p: 312, k: 1000
+Requires 12.460032 MB of memory per task
+Time taken: 3.797 s.
+Time spent in communication: 0.056 s.
+Fraction of time spent in communication: 0.015
+Performance: 6.564 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 16, m: 10000, m_p: 625, k: 10
+Requires 50.000000 MB of memory per task
+Time taken: 0.151 s.
+Time spent in communication: 0.001 s.
+Fraction of time spent in communication: 0.006
+Performance: 6.619 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 16, m: 10000, m_p: 625, k: 100
+Requires 50.000000 MB of memory per task
+Time taken: 1.505 s.
+Time spent in communication: 0.006 s.
+Fraction of time spent in communication: 0.004
+Performance: 6.644 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 16, m: 10000, m_p: 625, k: 1000
+Requires 50.000000 MB of memory per task
+Time taken: 15.040 s.
+Time spent in communication: 0.092 s.
+Fraction of time spent in communication: 0.006
+Performance: 6.649 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 32, m: 4992, m_p: 156, k: 10
+Requires 6.230016 MB of memory per task
+Time taken: 0.020 s.
+Time spent in communication: 0.002 s.
+Fraction of time spent in communication: 0.102
+Performance: 12.610 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 32, m: 4992, m_p: 156, k: 100
+Requires 6.230016 MB of memory per task
+Time taken: 0.191 s.
+Time spent in communication: 0.033 s.
+Fraction of time spent in communication: 0.173
+Performance: 13.068 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 32, m: 4992, m_p: 156, k: 1000
+Requires 6.230016 MB of memory per task
+Time taken: 1.925 s.
+Time spent in communication: 0.334 s.
+Fraction of time spent in communication: 0.173
+Performance: 12.946 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 32, m: 9984, m_p: 312, k: 10
+Requires 24.920064 MB of memory per task
+Time taken: 0.075 s.
+Time spent in communication: 0.002 s.
+Fraction of time spent in communication: 0.025
+Performance: 13.226 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 32, m: 9984, m_p: 312, k: 100
+Requires 24.920064 MB of memory per task
+Time taken: 0.752 s.
+Time spent in communication: 0.097 s.
+Fraction of time spent in communication: 0.128
+Performance: 13.258 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 32, m: 9984, m_p: 312, k: 1000
+Requires 24.920064 MB of memory per task
+Time taken: 7.544 s.
+Time spent in communication: 1.808 s.
+Fraction of time spent in communication: 0.240
+Performance: 13.213 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 64, m: 4992, m_p: 78, k: 10
+Requires 3.115008 MB of memory per task
+Time taken: 0.008 s.
+Time spent in communication: 0.001 s.
+Fraction of time spent in communication: 0.158
+Performance: 31.621 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 64, m: 4992, m_p: 78, k: 100
+Requires 3.115008 MB of memory per task
+Time taken: 0.073 s.
+Time spent in communication: 0.008 s.
+Fraction of time spent in communication: 0.105
+Performance: 34.156 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 64, m: 4992, m_p: 78, k: 1000
+Requires 3.115008 MB of memory per task
+Time taken: 0.729 s.
+Time spent in communication: 0.202 s.
+Fraction of time spent in communication: 0.277
+Performance: 34.192 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 64, m: 9984, m_p: 156, k: 10
+Requires 12.460032 MB of memory per task
+Time taken: 0.039 s.
+Time spent in communication: 0.002 s.
+Fraction of time spent in communication: 0.046
+Performance: 25.881 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 64, m: 9984, m_p: 156, k: 100
+Requires 12.460032 MB of memory per task
+Time taken: 0.382 s.
+Time spent in communication: 0.015 s.
+Fraction of time spent in communication: 0.040
+Performance: 26.108 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8418722
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Using np: 64, m: 9984, m_p: 156, k: 1000
+Requires 12.460032 MB of memory per task
+Time taken: 3.807 s.
+Time spent in communication: 0.727 s.
+Fraction of time spent in communication: 0.191
+Performance: 26.183 billion cell updates/s
+
+ 
+TACC: Shutdown complete. Exiting.
