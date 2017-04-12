@@ -94,9 +94,8 @@ int main(int argc, char **argv) {
 
     /* print new m to let user know n has been modified */
     if (rank == 0) {
-        fprintf(stderr, "Using np: %d, m: %d, m_p: %d, k: %d\n", num_tasks, m, m_p, k);
-        fprintf(stderr, "Requires %3.6lf MB of memory per task\n", 
-                ((2*4.0*m_p)*m/1e6));
+        printf("Using np: %d, m: %d, m_p: %d, k: %d\n", num_tasks, m, m_p, k);
+        printf("Requires %3.6lf MB of memory per task\n", ((2*4.0*m_p)*m/1e6));
     }
 
     /* Linearizing 2D grids to 1D using row-major ordering */
@@ -390,13 +389,12 @@ int main(int argc, char **argv) {
     */
 
     if (rank == 0) {
-        fprintf(stderr, "Time taken: %3.3lf s.\n", elt);
+        printf("Time taken: %3.3lf s.\n", elt);
 #if USE_MPI
-	fprintf(stderr, "Time spent in communication: %3.3lf s.\n", t_comm);
-	fprintf(stderr, "Fraction of time spent in communication: %3.3lf\n", t_comm / elt);
+	printf("Time spent in communication: %3.3lf s.\n", t_comm);
+	printf("Fraction of time spent in communication: %3.3lf\n", t_comm / elt);
 #endif
-        fprintf(stderr, "Performance: %3.3lf billion cell updates/s\n\n", 
-                (1.0*m*m)*k/(elt*1e9));
+        printf("Performance: %3.3lf billion cell updates/s\n\n", (1.0*m*m)*k/(elt*1e9));
     }
 
     /* free memory */
