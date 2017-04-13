@@ -1,0 +1,385 @@
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (1) is not a power of 2 program will abort
+n: 1
+Verification complete
+	MPI_Allgather: 0.00004 s
+	my_Allgather: 0.00002 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (1) is not a power of 2 program will abort
+n: 10
+Verification complete
+	MPI_Allgather: 0.00004 s
+	my_Allgather: 0.00002 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (1) is not a power of 2 program will abort
+n: 100
+Verification complete
+	MPI_Allgather: 0.00004 s
+	my_Allgather: 0.00002 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (1) is not a power of 2 program will abort
+n: 1000
+Verification complete
+	MPI_Allgather: 0.00004 s
+	my_Allgather: 0.00002 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (1) is not a power of 2 program will abort
+n: 10000
+Verification complete
+	MPI_Allgather: 0.00006 s
+	my_Allgather: 0.00002 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (2) is not a power of 2 program will abort
+n: 1
+Verification complete
+	MPI_Allgather: 0.00007 s
+	my_Allgather: 0.00004 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (2) is not a power of 2 program will abort
+n: 10
+Verification complete
+	MPI_Allgather: 0.00007 s
+	my_Allgather: 0.00003 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (2) is not a power of 2 program will abort
+n: 100
+Verification complete
+	MPI_Allgather: 0.00007 s
+	my_Allgather: 0.00003 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (2) is not a power of 2 program will abort
+n: 1000
+Verification complete
+	MPI_Allgather: 0.00007 s
+	my_Allgather: 0.00004 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (2) is not a power of 2 program will abort
+n: 10000
+Verification complete
+	MPI_Allgather: 0.00016 s
+	my_Allgather: 0.00008 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (4) is not a power of 2 program will abort
+n: 1
+Verification complete
+	MPI_Allgather: 0.00011 s
+	my_Allgather: 0.00004 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (4) is not a power of 2 program will abort
+n: 10
+Verification complete
+	MPI_Allgather: 0.00010 s
+	my_Allgather: 0.00004 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (4) is not a power of 2 program will abort
+n: 100
+Verification complete
+	MPI_Allgather: 0.00010 s
+	my_Allgather: 0.00004 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (4) is not a power of 2 program will abort
+n: 1000
+Verification complete
+	MPI_Allgather: 0.00011 s
+	my_Allgather: 0.00021 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (4) is not a power of 2 program will abort
+n: 10000
+Verification complete
+	MPI_Allgather: 0.00022 s
+	my_Allgather: 0.00022 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (8) is not a power of 2 program will abort
+n: 1
+Verification complete
+	MPI_Allgather: 0.00006 s
+	my_Allgather: 0.00003 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (8) is not a power of 2 program will abort
+n: 10
+Verification complete
+	MPI_Allgather: 0.00017 s
+	my_Allgather: 0.00003 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (8) is not a power of 2 program will abort
+n: 100
+Verification complete
+	MPI_Allgather: 0.00007 s
+	my_Allgather: 0.00005 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (8) is not a power of 2 program will abort
+n: 1000
+Verification complete
+	MPI_Allgather: 0.00031 s
+	my_Allgather: 0.00014 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (8) is not a power of 2 program will abort
+n: 10000
+Verification complete
+	MPI_Allgather: 0.00043 s
+	my_Allgather: 0.00044 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (16) is not a power of 2 program will abort
+n: 1
+Verification complete
+	MPI_Allgather: 0.00006 s
+	my_Allgather: 0.00010 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (16) is not a power of 2 program will abort
+n: 10
+Verification complete
+	MPI_Allgather: 0.00006 s
+	my_Allgather: 0.00010 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (16) is not a power of 2 program will abort
+n: 100
+Verification complete
+	MPI_Allgather: 0.00007 s
+	my_Allgather: 0.00011 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (16) is not a power of 2 program will abort
+n: 1000
+Verification complete
+	MPI_Allgather: 0.00024 s
+	my_Allgather: 0.00022 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (16) is not a power of 2 program will abort
+n: 10000
+Verification complete
+	MPI_Allgather: 0.00084 s
+	my_Allgather: 0.00124 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (32) is not a power of 2 program will abort
+n: 1
+Verification complete
+	MPI_Allgather: 0.06426 s
+	my_Allgather: 0.00008 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (32) is not a power of 2 program will abort
+n: 10
+Verification complete
+	MPI_Allgather: 0.07315 s
+	my_Allgather: 0.00008 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (32) is not a power of 2 program will abort
+n: 100
+Verification complete
+	MPI_Allgather: 0.00010 s
+	my_Allgather: 0.00022 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (32) is not a power of 2 program will abort
+n: 1000
+Verification complete
+	MPI_Allgather: 0.03264 s
+	my_Allgather: 0.00054 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (32) is not a power of 2 program will abort
+n: 10000
+Verification complete
+	MPI_Allgather: 0.00464 s
+	my_Allgather: 0.00353 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (64) is not a power of 2 program will abort
+n: 1
+Verification complete
+	MPI_Allgather: 0.11532 s
+	my_Allgather: 0.00013 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (64) is not a power of 2 program will abort
+n: 10
+Verification complete
+	MPI_Allgather: 0.03844 s
+	my_Allgather: 0.00017 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (64) is not a power of 2 program will abort
+n: 100
+Verification complete
+	MPI_Allgather: 0.01829 s
+	my_Allgather: 0.00022 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (64) is not a power of 2 program will abort
+n: 1000
+Verification complete
+	MPI_Allgather: 0.04168 s
+	my_Allgather: 0.00075 s
+
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8420145
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+If nprocs (64) is not a power of 2 program will abort
+n: 10000
+Verification complete
+	MPI_Allgather: 0.06255 s
+	my_Allgather: 0.00791 s
+
+ 
+TACC: Shutdown complete. Exiting.
