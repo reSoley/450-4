@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <sys/time.h>
@@ -122,59 +123,37 @@ int main(int argc, char **argv) {
 	// Transposing the 2nd matrix helps with spatial locality
 	//transpose(B, n);
 
-	float c_ij;
 	int k;
 	float *cur_rows = B;
 	float *new_rows = (float *) malloc(n * n_p * sizeof(float));
 	int send_rank = rank < num_tasks - 1 ? rank + 1 : 0;
 	int recv_rank = rank > 0 ? rank - 1 : num_tasks - 1;
+	float *C_tmp = (float *) calloc(n * n_p, sizeof(float));
 
 	for (i = 0; i < n_p; i++) {
-		for (j = 0; j < n; j++) {
-			c_ij = 0;
-			cur_rows = B;
-			for (k = 0; k < n; k++) {
-				c_ij += A[i * n + k] * cur_rows[(k % n_p) * n + j];
+		cur_rows = B;
 
-				// Test the multiplications!
-				/*if (rank == 0 && i == 0 && j == 0) {
-					printf("A[%d][%d] * B[%d][%d] = %f * %f\n", i, k, k, j, A[i * n + k], cur_rows[(k % n_p) * n + j]);
-				}*/
-
-				if (k % n_p == n_p - 1) {
-					MPI_Sendrecv(cur_rows, n * n_p, MPI_FLOAT, send_rank, 1,
-							new_rows, n * n_p, MPI_FLOAT, recv_rank, 1, MPI_COMM_WORLD, &stat);
-					/*if (i == 0 && j == 0 && rank == 0) {
-						printf("Before\n");
-						for (int m = 0; m < n_p; m++) {
-							for (int p = 0; p < n; p++) {
-								printf("%f\t", cur_rows[m * n + p]);
-							}
-							printf("\n");
-						}
-					}*/
-					if (cur_rows != B) {
-						free(cur_rows);
-					}
-					cur_rows = new_rows;
-					/*if (i == 0 && j == 0 && rank == 0) {
-						printf("After\n");
-						for (int m = 0; m < n_p; m++) {
-							for (int p = 0; p < n; p++) {
-								printf("%f\t", cur_rows[m * n + p]);
-							}
-							printf("\n");
-						}
-					}*/
-					new_rows = (float *) malloc(n * n_p * sizeof(float));
-				}
+		memset(C_tmp, 0, n * n_p * sizeof(float));
+		for (k = 0; k < n; k++) {
+			for (j = 0; j < n; j++) {
+				C[i * n + j] += A[i * n + k] * cur_rows[(k % n_p) * n + j];
 			}
-			C[i * n + j] = c_ij;
 
+			if (k % n_p == n_p - 1) {
+				MPI_Sendrecv(cur_rows, n * n_p, MPI_FLOAT, send_rank, 1,
+						new_rows, n * n_p, MPI_FLOAT, recv_rank, 1, MPI_COMM_WORLD, &stat);
+
+				if (cur_rows != B) {
+					free(cur_rows);
+				}
+
+				cur_rows = new_rows;
+				new_rows = (float *) malloc(n * n_p * sizeof(float));
+			}
 		}
 	}
 
-    //MPI_Allgather(C, 1, MPI_FLOAT, &C_final[rank * n_p], 1, MPI_FLOAT, MPI_COMM_WORLD);
+	free(new_rows);
 
 	// Transpose B to return back to the original matrix
 	//transpose(B, n);
@@ -199,16 +178,10 @@ int main(int argc, char **argv) {
     int verify_failed = 0;
     for (i=0; i<n_p; i++) {
         for (j=0; j<n; j++) {
-			/*if (rank == 0) {
-				printf("%f\t", C[i * n + j]);
-			}*/
             if (C[i*n+j] != ((rank+1)*n)) {
                 verify_failed = 1;
 			}
         }
-		/*if (rank == 0) {
-			printf("\n");
-		}*/
     }
 
     if (verify_failed) {
