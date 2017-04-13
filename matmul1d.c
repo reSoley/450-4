@@ -132,8 +132,8 @@ int main(int argc, char **argv) {
 
 	for (i = 0; i < n_p; i++) {
 		cur_rows = B;
-
 		memset(C_tmp, 0, n * n_p * sizeof(float));
+
 		for (k = 0; k < n; k++) {
 			for (j = 0; j < n; j++) {
 				C[i * n + j] += A[i * n + k] * cur_rows[(k % n_p) * n + j];
@@ -153,6 +153,7 @@ int main(int argc, char **argv) {
 		}
 	}
 
+	free(cur_rows);
 	free(new_rows);
 
 	// Transpose B to return back to the original matrix
