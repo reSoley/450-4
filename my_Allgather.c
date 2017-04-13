@@ -4,6 +4,13 @@
 #include <assert.h>
 #include <math.h>
 #include <mpi.h>
+#include <sys/time.h>
+
+static double timer() {
+    struct timeval tp;
+    gettimeofday(&tp, NULL);
+    return ((double) (tp.tv_sec) + 1e-6 * tp.tv_usec);
+}
 
 int my_Allgather(int *sendbuf, int n, int nprocs, int rank, int *recvbuf) {
 	/* Recursive doubling-based code goes here */
@@ -73,8 +80,20 @@ int main(int argc, char **argv) {
 	recvbuf2 = (int *) malloc(n*nprocs*sizeof(int));
 	assert(recvbuf2 != 0);
 
+	double elt_MPI, elt_my;
+
+	if (rank == 0) {
+		elt_MPI = timer();
+	}
 	MPI_Allgather(sendbuf, n, MPI_INT, recvbuf1, n, MPI_INT, MPI_COMM_WORLD);
+	if (rank == 0) {
+		elt_MPI = timer() - elt_MPI;
+		elt_my = timer();
+	}
 	my_Allgather(sendbuf, n, nprocs, rank, recvbuf2);
+	if (rank == 0) {
+		elt_my = timer() - elt_my;
+	}
  
 	/* Verify that my_Allgather works correctly */
 	for (i=0; i<n*nprocs; i++) {
@@ -83,6 +102,7 @@ int main(int argc, char **argv) {
 	}
 	if (rank == 0) {
 		printf("Verification complete\n");
+		printf("\tMPI_Allgather: %3.5lf s\n\tmy_Allgather: %3.5lf s\n\n", elt_MPI, elt_my);
 	}
 
 	free(sendbuf); free(recvbuf1); free(recvbuf2);
