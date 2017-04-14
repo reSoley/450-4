@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
         fprintf(stderr, "Requires %3.6lf MB of memory per task\n", ((3*4.0*n_p)*n/1e6));
     }
 
-    float *A, *B, *C, *C_final;
+    float *A, *B, *C;
     
     A = (float *) calloc(n_p * n, sizeof(float));
     assert(A != 0);
@@ -75,9 +75,6 @@ int main(int argc, char **argv) {
     
     C = (float *) calloc(n_p * n, sizeof(float));
     assert(C != 0);
-
-	C_final = (float *) calloc(n * n, sizeof(float));
-	assert(C_final != 0);
 
     /* linearized matrices in row-major storage */
     /* A[i][j] would be A[i*n+j] */
@@ -114,6 +111,8 @@ int main(int argc, char **argv) {
 	int recv_rank = rank > 0 ? rank - 1 : num_tasks - 1;
 	float *C_tmp = (float *) calloc(n * n_p, sizeof(float));
 
+	double t_comm = 0.0;
+	double t_k;
 	for (i = 0; i < n_p; i++) {
 		cur_rows = B;
 		memset(C_tmp, 0, n * n_p * sizeof(float));
@@ -124,8 +123,17 @@ int main(int argc, char **argv) {
 			}
 
 			if (k % n_p == n_p - 1) {
+				if (rank == 0) {
+					t_k = timer();
+				}
+
 				MPI_Sendrecv(cur_rows, n * n_p, MPI_FLOAT, send_rank, 1,
 						new_rows, n * n_p, MPI_FLOAT, recv_rank, 1, MPI_COMM_WORLD, &stat);
+
+				if (rank == 0) {
+					t_k = timer() - t_k;
+					t_comm += t_k;
+				}
 
 				if (cur_rows != B) {
 					free(cur_rows);
@@ -177,12 +185,14 @@ int main(int argc, char **argv) {
     }
 
     if (rank == 0) {
+		//Format is total time (s), comm time for 1 thread (s), fraction of time spent in comm (s)
+        printf("%3.3lf,%3.31f,%3.31f\n", elt, t_comm, t_comm / elt);
         fprintf(stderr, "Time taken: %3.3lf s.\n", elt);
         fprintf(stderr, "Performance: %3.3lf GFlop/s\n", (2.0*n*n)*n/(elt*1e9));
     }
 
     /* free memory */
-    free(A); free(B); free(C); free(C_final);
+    free(A); free(B); free(C);
 
     /* Shut down MPI */
 #if USE_MPI

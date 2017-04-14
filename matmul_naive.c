@@ -106,6 +106,8 @@ int main(int argc, char **argv) {
 	assert(mat_mul_type >= 0);
 	assert(mat_mul_type < 3);
 
+	fprintf(stderr, "n: %d\n", n);
+	fprintf(stderr, "Requires %3.6lf MB memory\n", ((4*8.0*n)*n/1e6));
     float *A, *B, *B_T, *C;
     
 	assert(posix_memalign((void **) &A, VECT_SIZE, n * n * sizeof(float)) == 0);
@@ -190,8 +192,9 @@ int main(int argc, char **argv) {
 
 
     elt = timer() - elt;
-    fprintf(stderr, "%3.3lf\n", (2.0*n*n*n)/(elt*1e9));
-
+    printf("%3.3lf\n", (2.0*n*n*n)/(elt*1e9));
+	fprintf(stderr, "Time taken: %3.3lf s.\n", elt);
+	fprintf(stderr, "Performance: %3.3lf GFlop/s\n", (2.0*n*n*n)/(elt*1e9));
     /* free memory */
 	free(A);
 	free(B);
