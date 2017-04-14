@@ -18,18 +18,6 @@ static double timer() {
     return ((double) (tp.tv_sec) + 1e-6 * tp.tv_usec);
 }
 
-inline void transpose(float *matrix, int n) {
-	int tmp;
-
-	for (int i = 0; i < n; i++) {
-		for (int j = i + 1; j < n; j++) {
-			tmp = matrix[i * n + j];
-			matrix[i * n + j] = matrix[j * n + i];
-			matrix[j * n + i] = tmp;
-		}
-	}
-}
-
 int main(int argc, char **argv) {
 
     int rank, num_tasks;
@@ -96,17 +84,15 @@ int main(int argc, char **argv) {
 
     int i, j;
 
-    /* static initalization, so that we can verify output */
-    /* using very simple initialization right now */
-    /* this isn't a good check for parallel debugging */
 #ifdef _OPENMP
 #pragma omp parallel for private(i,j)
 #endif
+	srand(time(NULL));
     for (i=0; i<n_p; i++) {
         for (j=0; j<n; j++) {
-            A[i*n+j] = (rank+1);
-            B[i*n+j] = 1;
-            C[i*n+j] = 0;
+            A[i*n+j] = (float) rand() / (float) RAND_MAX;
+            B[i*n+j] = (float) rand() / (float) RAND_MAX;
+            C[i*n+j] = (float) rand() / (float) RAND_MAX;
         }
     }
 
@@ -120,8 +106,6 @@ int main(int argc, char **argv) {
 
 #if USE_MPI
     /* Parallel matmul code goes here, see lecture slides for idea */
-	// Transposing the 2nd matrix helps with spatial locality
-	//transpose(B, n);
 
 	int k;
 	float *cur_rows = B;
@@ -156,8 +140,6 @@ int main(int argc, char **argv) {
 	free(cur_rows);
 	free(new_rows);
 
-	// Transpose B to return back to the original matrix
-	//transpose(B, n);
 
 #else
     int k;
