@@ -81,10 +81,10 @@ int main(int argc, char **argv) {
 
     int i, j;
 
+	srand(time(NULL));
 #ifdef _OPENMP
 #pragma omp parallel for private(i,j)
 #endif
-	srand(time(NULL));
     for (i=0; i<n_p; i++) {
         for (j=0; j<n; j++) {
             A[i*n+j] = (float) rand() / (float) RAND_MAX;
@@ -162,29 +162,8 @@ int main(int argc, char **argv) {
     }
 #endif
 
-    if (rank == 0) 
-        elt = timer() - elt;
-
-    /* Verify */
-    int verify_failed = 0;
-    for (i=0; i<n_p; i++) {
-        for (j=0; j<n; j++) {
-            if (C[i*n+j] != ((rank+1)*n)) {
-                verify_failed = 1;
-			}
-        }
-    }
-
-    if (verify_failed) {
-        fprintf(stderr, "ERROR: rank %d, verification failed, exiting!\n", rank);
-#if USE_MPI
-        MPI_Abort(MPI_COMM_WORLD, 2);
-#else
-        exit(2);
-#endif
-    }
-
     if (rank == 0) {
+        elt = timer() - elt;
 		//Format is total time (s), comm time for 1 thread (s), fraction of time spent in comm (s)
         printf("%3.3lf,%3.31f,%3.31f\n", elt, t_comm, t_comm / elt);
         fprintf(stderr, "Time taken: %3.3lf s.\n", elt);
